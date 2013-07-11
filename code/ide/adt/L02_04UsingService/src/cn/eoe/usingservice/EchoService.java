@@ -40,7 +40,6 @@ public class EchoService extends Service {
 		public int getI() throws RemoteException {
 			return EchoService.this.getI();
 		}
-		
 	}
 	
 	private RemoteBinder binder1 = new RemoteBinder();
