@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements EventListener<TouchEvent> {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -17,35 +17,29 @@ public class MainActivity extends Activity {
 		v = new GameView(this);
 		setContentView(v);
 		
-//		Card c = new Card();
-//		c.setNum(5);
-//		c.touchDown.add(new EventListener<TouchEvent>() {
-//			
-//			@Override
-//			public boolean onReceive(Object target, TouchEvent event) {
-//				
-//				Card card = (Card) target;
-//				if (card.isRectoVisible()) {
-//					card.showVerso();
-//				}else{
-//					card.showRecto();
-//				}
-//				
-//				return true;
-//			}
-//		});
+		Card c = new Card();
+		c.setNum(5);
+		c.setY(400);
+		c.touchDown.add(this);
+		v.add(c);
+		
+		c = new Card();
+		c.setNum(6);
+		c.setY(200);
+		c.touchDown.add(this);
+		v.add(c);
 //		
 //		v.add(c);
 		
-		Card c;
-		
-		for (int i = 0; i < 5; i++) {
-			c = new Card();
-			c.setNum(i);
-			v.add(c);
-			
-			c.y = 110*i;
-		}
+//		Card c;
+//		
+//		for (int i = 0; i < 5; i++) {
+//			c = new Card();
+//			c.setNum(i);
+//			v.add(c);
+//			
+//			c.y = 110*i;
+//		}
 	}
 
 	@Override
@@ -57,5 +51,17 @@ public class MainActivity extends Activity {
 	
 	
 	private GameView v;
+
+
+	@Override
+	public boolean onReceive(Object target, TouchEvent event) {
+		Card card = (Card) target;
+		if (card.isRectoVisible()) {
+			card.showVerso();
+		}else{
+			card.showRecto();
+		}
+		return true;
+	}
 
 }

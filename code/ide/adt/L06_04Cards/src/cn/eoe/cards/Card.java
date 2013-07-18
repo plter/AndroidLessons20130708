@@ -1,7 +1,6 @@
 package cn.eoe.cards;
 
 import android.graphics.Color;
-import android.graphics.RectF;
 
 import com.plter.android.game2d.display.Sprite;
 import com.plter.android.game2d.display.TextLine;
@@ -15,8 +14,8 @@ public class Card extends Sprite {
 		recto.add(tl);
 		tl.getPaint().setColor(Color.WHITE);
 		tl.getPaint().setTextSize(36);
-		tl.x = 20;
-		tl.y = 30;
+		tl.setX(20);
+		tl.setY(30);
 		
 		verso = new Rect(100, 100, Color.BLUE);
 		
@@ -25,13 +24,6 @@ public class Card extends Sprite {
 		
 		showRecto();
 	}
-	
-	@Override
-	public RectF getBounds() {
-		return bounds;
-	}
-	
-	private RectF bounds = new RectF(0, 0, 100, 100);
 	
 	
 	public void showRecto(){
