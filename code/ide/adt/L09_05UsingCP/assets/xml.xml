@@ -1,0 +1,6 @@
+<users>
+    <user name="张道" sex="女"/>
+    <user name="小丽" sex="女"/>
+</users>
+
+{"users":[{"name":"张道","sex":"女"},{"name":"小丽","sex":"男"}]}

@@ -1,0 +1,3 @@
+{"data":"Hello"} //一个对象
+["Hello","World"] //一个数组
+{"users":[{"name":"张道","sex":"女"},{"name":"小丽","sex":"男"}]}

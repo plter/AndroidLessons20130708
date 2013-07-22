@@ -58,6 +58,14 @@ public class MainActivity extends ListActivity {
 		//如果需要在数据库中的发生变化后对列表进行刷新，则要调用changeCursor方法
 //		sca.changeCursor(c);
 	}
+	
+	@Override
+	protected void onDestroy() {
+		dbRead.close();
+		dbWrite.close();
+		super.onDestroy();
+	}
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
