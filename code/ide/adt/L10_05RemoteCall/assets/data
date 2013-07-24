@@ -1,0 +1,3 @@
+{"methodName":"hello","args":["lisi"]}
+
+{"result":"Hello lisi","resultCode":1}
