@@ -9,14 +9,12 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.os.AsyncTask;
 import cn.eoe.remotecall.pkg.RCMethodPackage;
 import cn.eoe.remotecall.pkg.RCResultPackage;
-
-import android.os.AsyncTask;
 
 public class RCServer {
 
