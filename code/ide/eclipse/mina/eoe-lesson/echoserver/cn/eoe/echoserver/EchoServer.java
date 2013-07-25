@@ -8,10 +8,10 @@ import org.apache.mina.transport.socket.nio.NioSocketAcceptor;
 public class EchoServer {
 
 	public static void main(String[] args) {
-		
+				
 		NioSocketAcceptor acceptor = new NioSocketAcceptor();
-//		acceptor.getFilterChain().addLast("StringFilter", new StringFilter());
 		acceptor.setHandler(new EchoServerHandler());
+//		acceptor.getFilterChain().addLast("StringFilter", new StringFilter());
 		try {
 			acceptor.bind(new InetSocketAddress(8000));
 			System.out.println("服务器已经启动");
