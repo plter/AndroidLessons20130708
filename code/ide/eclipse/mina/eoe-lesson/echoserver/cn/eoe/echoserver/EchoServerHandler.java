@@ -17,6 +17,7 @@ public class EchoServerHandler extends IoHandlerAdapter {
 	public void messageReceived(IoSession session, Object message)
 			throws Exception {
 		
+		
 		final String str = ((IoBuffer)message).getString(Charset.forName("utf-8").newDecoder()).trim()+"\n";
 		
 		sessions.each(new ArrayLoopCallback<IoSession>() {
