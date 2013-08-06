@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/L11_01HelloAndroid/L11_01HelloAndroid.iml" filepath="$PROJECT_DIR$/L11_01HelloAndroid/L11_01HelloAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L11_02UsingHxCJS/L11_02UsingHxCJS.iml" filepath="$PROJECT_DIR$/L11_02UsingHxCJS/L11_02UsingHxCJS.iml" />
+    </modules>
+  </component>
+</project>
+

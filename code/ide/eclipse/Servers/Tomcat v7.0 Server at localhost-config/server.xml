@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="L10_01HelloJee" path="/L10_01HelloJee" reloadable="true" source="org.eclipse.jst.jee.server:L10_01HelloJee"/><Context docBase="L10_05RemoteCall" path="/L10_05RemoteCall" reloadable="true" source="org.eclipse.jst.jee.server:L10_05RemoteCall"/><Context docBase="L11_01HTML" path="/L11_01HTML" reloadable="true" source="org.eclipse.jst.jee.server:L11_01HTML"/></Host>
+      <Context docBase="L10_01HelloJee" path="/L10_01HelloJee" reloadable="true" source="org.eclipse.jst.jee.server:L10_01HelloJee"/><Context docBase="L10_05RemoteCall" path="/L10_05RemoteCall" reloadable="true" source="org.eclipse.jst.jee.server:L10_05RemoteCall"/><Context docBase="L11_01HTML" path="/L11_01HTML" reloadable="true" source="org.eclipse.jst.jee.server:L11_01HTML"/><Context docBase="L11_02JS" path="/L11_02JS" reloadable="true" source="org.eclipse.jst.jee.server:L11_02JS"/><Context docBase="L11_UsingCreateJS" path="/L11_UsingCreateJS" reloadable="true" source="org.eclipse.jst.jee.server:L11_UsingCreateJS"/></Host>
     </Engine>
   </Service>
 </Server>
