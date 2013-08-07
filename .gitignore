@@ -4,3 +4,17 @@ gen
 .DS_Store
 *.class
 code/bae/appidvxk9k4f951/
+out
+.idea
+
+code/ide/idea/.idea/modules.xml
+
+code/ide/idea/.idea/workspace.xml
+
+code/ide/idea/out/production/L11_01HelloAndroid/L11_01HelloAndroid.apk
+
+code/ide/idea/out/production/L11_01HelloAndroid/L11_01HelloAndroid.unaligned.apk
+
+code/ide/idea/.idea/misc.xml
+
+code/ide/eclipse/Servers/Tomcat v7.0 Server at localhost-config/server.xml
