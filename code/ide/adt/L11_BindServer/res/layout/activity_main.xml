@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnBindService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind Service" />
+    <Button
+        android:id="@+id/btnUnbindService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Unbind Service" />
+    <Button
+        android:id="@+id/btnGetNum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get num" />
+
+</LinearLayout>

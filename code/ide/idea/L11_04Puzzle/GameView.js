@@ -62,7 +62,14 @@
                     this.addChild(card);
                     this.cards.push(card);
                     this.cardsMap[i][j] = card;
-                    card.addEventListener("click", this.cardClickhandler);
+                    card.addEventListener("click", function(target,method){
+                        var f = function(){
+                            return f.method.apply(f.target,arguments);
+                        }
+                        f.method = method;
+                        f.target = target;
+                        return f;
+                    }(this,this.cardClickhandler));
                 }
             }
         }
