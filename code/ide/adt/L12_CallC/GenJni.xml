@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2013-8-12 下午12:06:36                                                        
+
+     CallC    
+     Gen JNI
+                   
+     plter                                                                
+     ====================================================================== -->
+<project name="CallC" default="GenJNI">
+    <description>
+            Gen JNI
+    </description>
+
+    <!-- ================================= 
+          target: GenJNI              
+         ================================= -->
+    <target name="GenJNI" description="Gen JNI">
+        <exec executable="javah" dir="bin/classes">
+        	<arg value="-d"/>
+        	<arg value="../../jni"/>
+        	<arg value="-jni"/>
+        	<arg value="cn.eoe.callc.CallCBridge"/>
+        </exec>
+    </target>
+
+</project>
