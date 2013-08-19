@@ -1,0 +1,21 @@
+1.Java语言基础
+2.Android四大基本组件
+3.Android UI控件和布局
+4.Android动画效果(ScaleAnimation,AlphaAnimation,TranslateAnimation,RotateAnimation,AnimationUtil,LayoutAnimation,Animation,android.graphics.Camera)
+5.Android资源访问
+6.Android绘图API
+7.系统功能(打电话、发短信、电源管理)
+8.传感器
+9.多点触摸和手势
+10.数据存储
+	A.内部存储
+		a)SharedPreference
+		b)Sqlite
+		c)内部文件存储
+	B.外部存储
+		a)SD卡文件存储
+		b)存储到云
+11.网络与通信(URLConnection,HttpClient,Socket)
+12.NDK使用(C,C++)
+13.模块式开发
+14.Cocos2d-x
