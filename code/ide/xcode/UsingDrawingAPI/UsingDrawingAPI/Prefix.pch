@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'UsingDrawingAPI' target in the 'UsingDrawingAPI' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
