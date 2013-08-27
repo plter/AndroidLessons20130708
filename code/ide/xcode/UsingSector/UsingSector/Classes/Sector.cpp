@@ -13,6 +13,7 @@ Sector::Sector(string name,Manager* manager):Object() {
 	_resultAdapter = new EventListenerList();
 	_commandAdapter = new EventListenerList();
     
+    _parent=NULL;
     _manager = NULL;
 	setManager(manager);
 }
@@ -44,13 +45,13 @@ string Sector::getName(){
 	return _name;
 }
 
-void Sector::addChild(Sector* s){
+void Sector::addSector(Sector* s){
 	_children.push_back(s);
 	s->setParent(this);
 	s->retain();
 }
 
-Sector* Sector::getChild(string name){
+Sector* Sector::getSector(string name){
 	for(vector<Sector*>::iterator it = _children.begin();it!=_children.end();++it){
 		if (((Sector*)(*it))->getName().compare(name)==0) {
 			return *it;
@@ -59,7 +60,7 @@ Sector* Sector::getChild(string name){
 	return NULL;
 }
 
-void Sector::removeChild(Sector* s){
+void Sector::removeSector(Sector* s){
 
 	Sector* tmp;
 
@@ -76,7 +77,7 @@ void Sector::removeChild(Sector* s){
 	tmp = NULL;
 }
 
-void Sector::removeChild(string sectorName){
+void Sector::removeSector(string sectorName){
 	Sector* tmp;
 
 	for(vector<Sector*>::iterator it = _children.begin();it!=_children.end();++it){
@@ -115,6 +116,10 @@ Sector::~Sector() {
 
 	_resultAdapter->release();
 	_commandAdapter->release();
+    
+    if (_manager!=NULL) {
+        _manager->release();
+    }
 }
 
 Function* Sector::removeFunction(Function* f) {
@@ -189,11 +194,11 @@ bool Sector::_sendRequest(Request* req) {
 
 	if (_parent!=NULL) {
 		_parent->sendRequest(req);
-
-		Command* cmd = new Command(req->getType(),req->getData());
-		_commandAdapter->dispatch(cmd);
-		cmd->release();
 	}
+    
+    Command* cmd = new Command(req->getType(),req->getData());
+    sendCommand(cmd);
+    cmd->release();
 
 	return suc;
 }

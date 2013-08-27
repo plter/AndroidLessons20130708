@@ -2,6 +2,13 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "Manager.h"
+#include "RootSector.h"
+#include "Request.h"
+#include "Config.h"
+
+using namespace plter;
+USING_NS_CC;
 
 class HelloWorld : public cocos2d::CCLayer
 {
@@ -14,9 +21,18 @@ public:
     
     // a selector callback
     void menuCloseCallback(CCObject* pSender);
+    
+    virtual void ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent);
 
+    virtual void setManager(Manager* mgr);
+    virtual Manager* getManager();
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
+    
+private:
+    CCLabelTTF* labelStartGame;
+    CCLabelTTF* labelShowHelp;
+    Manager* _manager;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

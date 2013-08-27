@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3136CFD917CC336C006E5944 /* game.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3136CFD817CC336C006E5944 /* game.jpg */; };
+		3136CFDC17CC3513006E5944 /* RootSector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3136CFDA17CC3513006E5944 /* RootSector.cpp */; };
+		3136CFE717CC4701006E5944 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3136CFE517CC4700006E5944 /* GameScene.cpp */; };
+		3136CFEA17CC4E19006E5944 /* HelloWorldSceneSector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3136CFE817CC4E19006E5944 /* HelloWorldSceneSector.cpp */; };
+		3136CFED17CC4EF1006E5944 /* HelloWorldSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3136CFEB17CC4EF1006E5944 /* HelloWorldSceneManager.cpp */; };
+		3136CFF017CC5876006E5944 /* GameSceneSector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3136CFEE17CC5875006E5944 /* GameSceneSector.cpp */; };
+		3136CFF317CC5B0F006E5944 /* GameSceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3136CFF117CC5B0E006E5944 /* GameSceneManager.cpp */; };
+		3136CFF617CC7E41006E5944 /* Help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3136CFF417CC7E40006E5944 /* Help.cpp */; };
+		3136CFF917CC7FE7006E5944 /* HelpSector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3136CFF717CC7FE5006E5944 /* HelpSector.cpp */; };
+		3136CFFC17CC7FF8006E5944 /* HelpManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3136CFFA17CC7FF7006E5944 /* HelpManager.cpp */; };
 		31CBEF4717CB645200EC6654 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CBEF4617CB645200EC6654 /* QuartzCore.framework */; };
 		31CBEF4917CB645200EC6654 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CBEF4817CB645200EC6654 /* OpenGLES.framework */; };
 		31CBEF4B17CB645200EC6654 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CBEF4A17CB645200EC6654 /* OpenAL.framework */; };
@@ -280,6 +290,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3136CFD817CC336C006E5944 /* game.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = game.jpg; path = Resources/game.jpg; sourceTree = "<group>"; };
+		3136CFDA17CC3513006E5944 /* RootSector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RootSector.cpp; path = Classes/RootSector.cpp; sourceTree = "<group>"; };
+		3136CFDB17CC3513006E5944 /* RootSector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootSector.h; path = Classes/RootSector.h; sourceTree = "<group>"; };
+		3136CFE417CC4184006E5944 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Classes/Config.h; sourceTree = "<group>"; };
+		3136CFE517CC4700006E5944 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = Classes/GameScene.cpp; sourceTree = "<group>"; };
+		3136CFE617CC4701006E5944 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
+		3136CFE817CC4E19006E5944 /* HelloWorldSceneSector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldSceneSector.cpp; path = Classes/HelloWorldSceneSector.cpp; sourceTree = "<group>"; };
+		3136CFE917CC4E19006E5944 /* HelloWorldSceneSector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldSceneSector.h; path = Classes/HelloWorldSceneSector.h; sourceTree = "<group>"; };
+		3136CFEB17CC4EF1006E5944 /* HelloWorldSceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldSceneManager.cpp; path = Classes/HelloWorldSceneManager.cpp; sourceTree = "<group>"; };
+		3136CFEC17CC4EF1006E5944 /* HelloWorldSceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldSceneManager.h; path = Classes/HelloWorldSceneManager.h; sourceTree = "<group>"; };
+		3136CFEE17CC5875006E5944 /* GameSceneSector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSceneSector.cpp; path = Classes/GameSceneSector.cpp; sourceTree = "<group>"; };
+		3136CFEF17CC5875006E5944 /* GameSceneSector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSceneSector.h; path = Classes/GameSceneSector.h; sourceTree = "<group>"; };
+		3136CFF117CC5B0E006E5944 /* GameSceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSceneManager.cpp; path = Classes/GameSceneManager.cpp; sourceTree = "<group>"; };
+		3136CFF217CC5B0F006E5944 /* GameSceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSceneManager.h; path = Classes/GameSceneManager.h; sourceTree = "<group>"; };
+		3136CFF417CC7E40006E5944 /* Help.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Help.cpp; path = Classes/Help.cpp; sourceTree = "<group>"; };
+		3136CFF517CC7E40006E5944 /* Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Help.h; path = Classes/Help.h; sourceTree = "<group>"; };
+		3136CFF717CC7FE5006E5944 /* HelpSector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelpSector.cpp; path = Classes/HelpSector.cpp; sourceTree = "<group>"; };
+		3136CFF817CC7FE6006E5944 /* HelpSector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpSector.h; path = Classes/HelpSector.h; sourceTree = "<group>"; };
+		3136CFFA17CC7FF7006E5944 /* HelpManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelpManager.cpp; path = Classes/HelpManager.cpp; sourceTree = "<group>"; };
+		3136CFFB17CC7FF8006E5944 /* HelpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpManager.h; path = Classes/HelpManager.h; sourceTree = "<group>"; };
 		31CBEF4317CB645200EC6654 /* UsingSector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingSector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CBEF4617CB645200EC6654 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		31CBEF4817CB645200EC6654 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -888,6 +918,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3136CFE317CC3E78006E5944 /* Sector */ = {
+			isa = PBXGroup;
+			children = (
+				31CBF2C417CB652D00EC6654 /* Callback.cpp */,
+				31CBF2C517CB652D00EC6654 /* Callback.h */,
+				31CBF2C617CB652D00EC6654 /* Command.cpp */,
+				31CBF2C717CB652D00EC6654 /* Command.h */,
+				31CBF2C817CB652D00EC6654 /* Event.cpp */,
+				31CBF2C917CB652D00EC6654 /* Event.h */,
+				31CBF2CA17CB652D00EC6654 /* EventListener.cpp */,
+				31CBF2CB17CB652D00EC6654 /* EventListener.h */,
+				31CBF2CC17CB652D00EC6654 /* EventListenerList.cpp */,
+				31CBF2CD17CB652D00EC6654 /* EventListenerList.h */,
+				31CBF2CE17CB652D00EC6654 /* Function.cpp */,
+				31CBF2CF17CB652D00EC6654 /* Function.h */,
+				31CBF2D017CB652D00EC6654 /* Manager.cpp */,
+				31CBF2D117CB652D00EC6654 /* Manager.h */,
+				31CBF2D217CB652D00EC6654 /* Object.cpp */,
+				31CBF2D317CB652D00EC6654 /* Object.h */,
+				31CBF2D417CB652D00EC6654 /* Request.cpp */,
+				31CBF2D517CB652D00EC6654 /* Request.h */,
+				31CBF2D617CB652D00EC6654 /* Result.cpp */,
+				31CBF2D717CB652D00EC6654 /* Result.h */,
+				31CBF2D817CB652D00EC6654 /* Sector.cpp */,
+				31CBF2D917CB652D00EC6654 /* Sector.h */,
+			);
+			name = Sector;
+			sourceTree = "<group>";
+		};
 		31CBEF3A17CB645200EC6654 = {
 			isa = PBXGroup;
 			children = (
@@ -926,6 +985,7 @@
 				31CBEF5717CB645200EC6654 /* Resources */,
 				31CBEF6F17CB645300EC6654 /* ios */,
 				31CBEF7817CB645300EC6654 /* libs */,
+				3136CFE317CC3E78006E5944 /* Sector */,
 				31CBF2B817CB645B00EC6654 /* Classes */,
 				31CBF2B617CB645B00EC6654 /* Supporting Files */,
 			);
@@ -935,6 +995,7 @@
 		31CBEF5717CB645200EC6654 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3136CFD817CC336C006E5944 /* game.jpg */,
 				31CBEF5817CB645200EC6654 /* CloseNormal.png */,
 				31CBEF5A17CB645200EC6654 /* CloseSelected.png */,
 				31CBEF5C17CB645200EC6654 /* Default.png */,
@@ -2009,32 +2070,29 @@
 		31CBF2B817CB645B00EC6654 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				31CBF2C417CB652D00EC6654 /* Callback.cpp */,
-				31CBF2C517CB652D00EC6654 /* Callback.h */,
-				31CBF2C617CB652D00EC6654 /* Command.cpp */,
-				31CBF2C717CB652D00EC6654 /* Command.h */,
-				31CBF2C817CB652D00EC6654 /* Event.cpp */,
-				31CBF2C917CB652D00EC6654 /* Event.h */,
-				31CBF2CA17CB652D00EC6654 /* EventListener.cpp */,
-				31CBF2CB17CB652D00EC6654 /* EventListener.h */,
-				31CBF2CC17CB652D00EC6654 /* EventListenerList.cpp */,
-				31CBF2CD17CB652D00EC6654 /* EventListenerList.h */,
-				31CBF2CE17CB652D00EC6654 /* Function.cpp */,
-				31CBF2CF17CB652D00EC6654 /* Function.h */,
-				31CBF2D017CB652D00EC6654 /* Manager.cpp */,
-				31CBF2D117CB652D00EC6654 /* Manager.h */,
-				31CBF2D217CB652D00EC6654 /* Object.cpp */,
-				31CBF2D317CB652D00EC6654 /* Object.h */,
-				31CBF2D417CB652D00EC6654 /* Request.cpp */,
-				31CBF2D517CB652D00EC6654 /* Request.h */,
-				31CBF2D617CB652D00EC6654 /* Result.cpp */,
-				31CBF2D717CB652D00EC6654 /* Result.h */,
-				31CBF2D817CB652D00EC6654 /* Sector.cpp */,
-				31CBF2D917CB652D00EC6654 /* Sector.h */,
 				31CBF2B917CB645B00EC6654 /* AppDelegate.h */,
 				31CBF2BA17CB645B00EC6654 /* AppDelegate.cpp */,
 				31CBF2BC17CB645B00EC6654 /* HelloWorldScene.h */,
 				31CBF2BD17CB645B00EC6654 /* HelloWorldScene.cpp */,
+				3136CFE817CC4E19006E5944 /* HelloWorldSceneSector.cpp */,
+				3136CFE917CC4E19006E5944 /* HelloWorldSceneSector.h */,
+				3136CFEB17CC4EF1006E5944 /* HelloWorldSceneManager.cpp */,
+				3136CFEC17CC4EF1006E5944 /* HelloWorldSceneManager.h */,
+				3136CFDA17CC3513006E5944 /* RootSector.cpp */,
+				3136CFDB17CC3513006E5944 /* RootSector.h */,
+				3136CFE417CC4184006E5944 /* Config.h */,
+				3136CFE517CC4700006E5944 /* GameScene.cpp */,
+				3136CFE617CC4701006E5944 /* GameScene.h */,
+				3136CFEE17CC5875006E5944 /* GameSceneSector.cpp */,
+				3136CFEF17CC5875006E5944 /* GameSceneSector.h */,
+				3136CFF117CC5B0E006E5944 /* GameSceneManager.cpp */,
+				3136CFF217CC5B0F006E5944 /* GameSceneManager.h */,
+				3136CFF417CC7E40006E5944 /* Help.cpp */,
+				3136CFF517CC7E40006E5944 /* Help.h */,
+				3136CFF717CC7FE5006E5944 /* HelpSector.cpp */,
+				3136CFF817CC7FE6006E5944 /* HelpSector.h */,
+				3136CFFA17CC7FF7006E5944 /* HelpManager.cpp */,
+				3136CFFB17CC7FF8006E5944 /* HelpManager.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2102,6 +2160,7 @@
 				31CBEF6D17CB645300EC6654 /* iTunesArtwork in Resources */,
 				31CBF00917CB645400EC6654 /* ChangeLog in Resources */,
 				31CBF17317CB645900EC6654 /* project.pbxproj in Resources */,
+				3136CFD917CC336C006E5944 /* game.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2359,6 +2418,15 @@
 				31CBF2E217CB652D00EC6654 /* Request.cpp in Sources */,
 				31CBF2E317CB652D00EC6654 /* Result.cpp in Sources */,
 				31CBF2E417CB652D00EC6654 /* Sector.cpp in Sources */,
+				3136CFDC17CC3513006E5944 /* RootSector.cpp in Sources */,
+				3136CFE717CC4701006E5944 /* GameScene.cpp in Sources */,
+				3136CFEA17CC4E19006E5944 /* HelloWorldSceneSector.cpp in Sources */,
+				3136CFED17CC4EF1006E5944 /* HelloWorldSceneManager.cpp in Sources */,
+				3136CFF017CC5876006E5944 /* GameSceneSector.cpp in Sources */,
+				3136CFF317CC5B0F006E5944 /* GameSceneManager.cpp in Sources */,
+				3136CFF617CC7E41006E5944 /* Help.cpp in Sources */,
+				3136CFF917CC7FE7006E5944 /* HelpSector.cpp in Sources */,
+				3136CFFC17CC7FF8006E5944 /* HelpManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2496,6 +2564,7 @@
 				31CBF2C317CB645B00EC6654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

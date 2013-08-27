@@ -37,10 +37,10 @@ public:
 	virtual ~Sector();
 
 	virtual string getName();
-	virtual void addChild(Sector* s);
-	virtual void removeChild(Sector* s);
-	virtual void removeChild(string sectorName);
-	virtual Sector* getChild(string name);
+	virtual void addSector(Sector* s);
+	virtual void removeSector(Sector* s);
+	virtual void removeSector(string sectorName);
+	virtual Sector* getSector(string name);
 	virtual Sector* getParent();
 	virtual void setManager(Manager* manager);
 	virtual bool sendRequest(Request* req);

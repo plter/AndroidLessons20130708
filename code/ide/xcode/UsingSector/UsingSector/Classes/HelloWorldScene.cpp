@@ -31,54 +31,48 @@ bool HelloWorld::init()
         return false;
     }
 
-    /////////////////////////////
-    // 2. add a menu item with "X" image, which is clicked to quit the program
-    //    you may modify it.
-
-    // add a "close" icon to exit the progress. it's an autorelease object
-    CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
-                                        "CloseNormal.png",
-                                        "CloseSelected.png",
-                                        this,
-                                        menu_selector(HelloWorld::menuCloseCallback) );
-    pCloseItem->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20) );
-
-    // create menu, it's an autorelease object
-    CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
-    pMenu->setPosition( CCPointZero );
-    this->addChild(pMenu, 1);
-
-    /////////////////////////////
-    // 3. add your codes below...
-
-    // add a label shows "Hello World"
-    // create and initialize a label
-    CCLabelTTF* pLabel = CCLabelTTF::create("Hello World", "Thonburi", 34);
-
-    // ask director the window size
+    setTouchEnabled(true);
+    
     CCSize size = CCDirector::sharedDirector()->getWinSize();
-
-    // position the label on the center of the screen
-    pLabel->setPosition( ccp(size.width / 2, size.height - 20) );
-
-    // add the label as a child to this layer
-    this->addChild(pLabel, 1);
-
-    // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
-
-    // position the sprite on the center of the screen
-    pSprite->setPosition( ccp(size.width/2, size.height/2) );
-
-    // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
     
-    Sector* s = new Sector("s",NULL);
-    CCLog("name:%s",s->getName().c_str());
+    labelShowHelp = CCLabelTTF::create();
+    labelShowHelp->setString("Show Help");
+    labelShowHelp->setFontSize(48);
+    labelShowHelp->setPosition(ccp(size.width/2, 100));
+    addChild(labelShowHelp);
     
+    labelStartGame = CCLabelTTF::create();
+    labelStartGame->setString("Start Game");
+    labelStartGame->setFontSize(48);
+    labelStartGame->setPosition(ccp(size.width/2, 200));
+    addChild(labelStartGame);
     
     return true;
 }
+
+void HelloWorld::ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent){
+    CCTouch* touch = (CCTouch*)pTouches->anyObject();
+    Request* req;
+    if (labelStartGame->boundingBox().containsPoint(touch->getLocation())) {
+        req = new Request(SHOW_GAME_VIEW);
+        getManager()->sendRequest(req);
+        req->release();
+    }else if (labelShowHelp->boundingBox().containsPoint(touch->getLocation())){
+        req = new Request(SHOW_HELP_CONTENT);
+        getManager()->sendRequest(req);
+        req->release();
+    }
+}
+
+
+void HelloWorld::setManager(plter::Manager *mgr){
+    _manager = mgr;
+}
+
+Manager* HelloWorld::getManager(){
+    return _manager;
+}
+
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
 {

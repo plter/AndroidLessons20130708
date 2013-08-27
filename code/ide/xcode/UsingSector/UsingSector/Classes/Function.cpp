@@ -7,12 +7,18 @@
 #include "Function.h"
 
 namespace plter {
-
-Function::Function(string name):EventListener(name) {
-}
-
-Function::~Function() {
-	// TODO Auto-generated destructor stub
-}
-
+    
+    Function::Function(string name,Sector* sector):EventListener(name) {
+        _target = sector;
+        _target->retain();
+    }
+    
+    Function::~Function() {
+        _target->release();
+    }
+    
+    Sector* Function::getSector(){
+        return _target;
+    }
+    
 } /* namespace plter */
