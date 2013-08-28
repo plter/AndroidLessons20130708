@@ -41,7 +41,7 @@ public:
 	virtual void removeSector(Sector* s);
 	virtual void removeSector(string sectorName);
 	virtual Sector* getSector(string name);
-	virtual Sector* getParent();
+	virtual Sector* getSuperior();
 	virtual void setManager(Manager* manager);
 	virtual bool sendRequest(Request* req);
 	virtual bool sendCommand(Command* cmd);
@@ -58,13 +58,15 @@ private:
 	string _name;
 	Manager* _manager;
 	vector<Sector*> _children;
-	Sector* _parent;
+	Sector* _superior;
 	EventListenerList* _commandAdapter;
 	EventListenerList* _resultAdapter;
 
 	virtual void tryToRemoveCurrentManager();
-	virtual void setParent(Sector* p);
-	virtual bool _sendRequest(Request* req);
+	virtual void setSuperior(Sector* p);
+	virtual bool _handleRequestExceptCommandListener(Request* req,Sector* except);
+	virtual bool _sendCommandExcept(Command* cmd,Sector* except);
+	virtual bool _sendResultExcept(Result* result,Sector* except);
 };
 
 } /* namespace plter */

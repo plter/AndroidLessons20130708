@@ -21,7 +21,7 @@ namespace plter {
         virtual Sector* getSector();
         
     private:
-        Sector* _target;
+        Sector* _sector;
     };
     
 } /* namespace plter */

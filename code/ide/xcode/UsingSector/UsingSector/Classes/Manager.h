@@ -35,6 +35,7 @@ namespace plter {
         virtual bool sendRequest(Request* req);
         virtual bool sendResult(Result* result);
         virtual bool handleRequest(Request* req);
+        virtual bool reportToSuperior(Request* req);
         virtual void internal_setSector(Sector* s);
         
     private:

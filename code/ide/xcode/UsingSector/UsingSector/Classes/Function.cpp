@@ -9,16 +9,16 @@
 namespace plter {
     
     Function::Function(string name,Sector* sector):EventListener(name) {
-        _target = sector;
-        _target->retain();
+        _sector = sector;
+        _sector->retain();
     }
     
     Function::~Function() {
-        _target->release();
+        _sector->release();
     }
     
     Sector* Function::getSector(){
-        return _target;
+        return _sector;
     }
     
 } /* namespace plter */
